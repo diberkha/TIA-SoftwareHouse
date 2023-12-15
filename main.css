@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster+Two&family=Exo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.wrapHead{
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top{
+    width: 96%;
+}
+
+.wrapHead .btn {
+    margin-top: 13px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #61a6ab;
+    padding: 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header.fixed-to-top{
+    background: rgb(97, 166, 171);
+}
+
+#brand{
+    font-family: 'Anton', sans-serif;
+    color: #f0ebdf;
+    float: left;
+}
+
+nav{
+    float: right;
+    margin-top: 15px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav li a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: #f0ebdf;
+    transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+section h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
+}
+
+#home{
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 700px;
+}
+    
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+    
+.description{
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+    
+.logo{
+    border-radius: 300px;
+    height: 300px;
+    width: 300px;
+    margin-top: 180px;
+}
+    
+.description h1{
+    color: #72afb4;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    text-shadow: #f0ebdf -3px 3px 0px;
+}
+    
+.description p{
+    color: #f0ebdf;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#aboutus{
+    background: #54999e;
+    height: auto;
+}
+
+.text{
+    text-align: center;
+    margin: 50px 0;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.text b{
+    font-weight: bold;
+}
+
+#services{
+    background: #72afb4;
+    height: auto;
+}
+
+.mode5 { 
+    -webkit-transition-duration: 0.5s; 
+    -moz-transition-duration: 0.5s; 
+    -o-transition-duration: 0.5s; 
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+} 
+
+div > .mode5 {
+    padding: 10px;
+}
+    
+.mode5:hover { 
+    -webkit-transform:scale(1.05); 
+    -moz-transform:scale(1.05); 
+    -o-transform:scale(1.05); 
+    opacity: 1; 
+    z-index: 2; 
+}
+
+.title{
+     display: block;
+     font-family: 'exo', sans-serif;
+     color: #f0ebdf;
+     font-size: 70px;
+     text-align: center;
+     margin-top: 45px;
+}
+
+.row{
+    padding: 10px 0;
+}
+
+.subtitle h1{
+    font-family: 'exo', sans-serif;
+    color: #000000;
+    margin: 30px 0;
+}
+
+p{
+    margin: 30px 20px 50px 0;
+    text-align: center;
+    color: #000000;
+    font-family: 'exo', sans-serif;
+}
+
+#gallery{
+    background: #82b9bd;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+#gallery h1{
+    font-family: 'exo', sans-serif;
+    color: #f0ebdf;
+    font-size: 70px;
+    text-align: center;
+}
+
+#demo {
+    margin: 0px auto;
+    width: 60%;
+}
+
+#review{
+    background: #93c2c6;
+    height: auto;
+}
+
+#contact{
+    background: #61a6ab;
+    height: auto;
+}
+
+.page-footer{
+    margin: 30px;
+}
+
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 2em;
+    }
+    .description p {
+        font-size: 1.2rem;
+    }
+    .features {
+        margin: 0;
+    }
+}     
